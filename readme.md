@@ -1,7 +1,7 @@
 # Laravel (nginx + mysql + phpfpm)
 ## Precondition
 - Docker (https://www.docker.com/)  
-- Composer (https://getcomposer.org/)  
+- Docker Compose (https://docs.docker.com/compose/)  
 
 ## Set up
   > `git clone https://github.com/sho-zy/laravelSample.git`  
@@ -13,5 +13,5 @@
   > `docker-compose restart`
 
 ## URL
-- laravel Home  
+- Laravel Home  
   http://localhost/
