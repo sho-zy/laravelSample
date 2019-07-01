@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
-      - ./public:/var/www/testProject/public
+      - ./public:/var/www/larabelSample/public
     ports:
       - 80:80
     links:
@@ -17,20 +17,20 @@ services:
       context: .
       dockerfile: ./Dockerfile
     volumes:
-      - .:/var/www/testProject
+      - .:/var/www/larabelSample
     links:
       - mysql
     depends_on:
       - mysql
     environment:
       - DB_HOST=mysql
-      - DB_DATABASE=testProject_db
-      - DB_USERNAME=testProject
-      - DB_PASSWORD=testProject
+      - DB_DATABASE=larabelSample_db
+      - DB_USERNAME=larabelSample
+      - DB_PASSWORD=larabelSample
   mysql:
     image: mysql:5.7
     environment:
-      - MYSQL_ROOT_PASSWORD=testProject
-      - MYSQL_DATABASE=testProject_db
-      - MYSQL_USER=testProject
-      - MYSQL_PASSWORD=testProject
+      - MYSQL_ROOT_PASSWORD=larabelSample
+      - MYSQL_DATABASE=larabelSample_db
+      - MYSQL_USER=larabelSample
+      - MYSQL_PASSWORD=larabelSample
