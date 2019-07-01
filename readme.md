@@ -4,14 +4,14 @@
 - Composer (https://getcomposer.org/)  
 
 ## Set up
-  > `git clone https://github.com/sho-zy/larabelSample.git`  
+  > `git clone https://github.com/sho-zy/laravelSample.git`  
   > `docker-compose up -d`  
-  > `docker exec -it larabelsample_phpfpm_1 /bin/sh`  (enter the container)  
+  > `docker exec -it laravelsample_phpfpm_1 /bin/sh`  (enter the container)  
   > `composer install`  
   > `php artisan key:generate`  
   > `exit`    (exit the container)  
   > `docker-compose restart`
 
 ## URL
-- Larabel Home  
+- laravel Home  
   http://localhost/
