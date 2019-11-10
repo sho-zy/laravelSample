@@ -1,6 +1,6 @@
 FROM php:7.2-fpm-alpine
 RUN apk update
-RUN apk --update add nodejs-npm zlib-dev\
+RUN apk --update add nodejs-npm zlib-dev \
    && npm install \
    && npm install popper.js
 RUN docker-php-ext-install pdo_mysql zip

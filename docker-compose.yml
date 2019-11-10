@@ -6,7 +6,8 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - ./nginx/conf/conf.d/:/etc/nginx/conf.d/
+      - ./nginx/log/:/var/log/nginx/
       - ./public:/var/www/laravelSample/public
     depends_on:
       - phpfpm
