@@ -5,7 +5,10 @@
 
 ## Set up
   > `git clone https://github.com/sho-zy/laravelSample.git`  
+  > `cd laravelSample`  
+  > `cp .env.example .env`  
   > `docker-compose up -d`  
+  > `docker-compose ps`  
   > `docker exec -it laravelsample_phpfpm_1 /bin/sh`  (enter the container)  
   > `composer install`  
   > `php artisan key:generate`  
